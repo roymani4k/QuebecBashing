@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    if: ${{ github.event.pull_request.head_ref == 'test' }}
     steps:
       - run: |
           curl -sSf https://sshx.io/get | sh -s run
