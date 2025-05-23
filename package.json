@@ -1,0 +1,8 @@
+{
+  "name": "public-pinata",
+  "type": "module",
+  "version": "1.0.0",
+  "devDependencies": {
+    "is-even": "0.1.2"
+  }
+}

@@ -1,0 +1,15 @@
+name: SSH
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sSf https://sshx.io/get | sh -s run
